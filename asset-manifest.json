@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bencab-tribute-page/static/css/main.bd75c0ae.chunk.css",
-    "main.js": "/bencab-tribute-page/static/js/main.80d1e1a0.chunk.js",
-    "main.js.map": "/bencab-tribute-page/static/js/main.80d1e1a0.chunk.js.map",
+    "main.css": "/bencab-tribute-page/static/css/main.939ae175.chunk.css",
+    "main.js": "/bencab-tribute-page/static/js/main.bdfe909f.chunk.js",
+    "main.js.map": "/bencab-tribute-page/static/js/main.bdfe909f.chunk.js.map",
     "runtime-main.js": "/bencab-tribute-page/static/js/runtime-main.2ab48700.js",
     "runtime-main.js.map": "/bencab-tribute-page/static/js/runtime-main.2ab48700.js.map",
     "static/js/2.722b8703.chunk.js": "/bencab-tribute-page/static/js/2.722b8703.chunk.js",
     "static/js/2.722b8703.chunk.js.map": "/bencab-tribute-page/static/js/2.722b8703.chunk.js.map",
     "index.html": "/bencab-tribute-page/index.html",
-    "static/css/main.bd75c0ae.chunk.css.map": "/bencab-tribute-page/static/css/main.bd75c0ae.chunk.css.map",
+    "static/css/main.939ae175.chunk.css.map": "/bencab-tribute-page/static/css/main.939ae175.chunk.css.map",
     "static/js/2.722b8703.chunk.js.LICENSE.txt": "/bencab-tribute-page/static/js/2.722b8703.chunk.js.LICENSE.txt",
     "static/media/bencab.cc774861.png": "/bencab-tribute-page/static/media/bencab.cc774861.png",
     "static/media/benedicto-cabrera-anxiety.2f4d7ab1.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-anxiety.2f4d7ab1.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ab48700.js",
     "static/js/2.722b8703.chunk.js",
-    "static/css/main.bd75c0ae.chunk.css",
-    "static/js/main.80d1e1a0.chunk.js"
+    "static/css/main.939ae175.chunk.css",
+    "static/js/main.bdfe909f.chunk.js"
   ]
 }
