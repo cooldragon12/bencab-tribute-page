@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import './App.css';
-import {Intro, NavSideBar, Timeline, WorksGallery} from './main'
+import {Intro, NavSideBar, Timeline, WorksGallery, Awards} from './main'
 // import {SwipeScroll} from './utility'
 
 
@@ -31,6 +31,7 @@ function MainCompiler() {
       <Intro scroll={scrollState}/>
       <Timeline scroll={scrollState}/>
       <WorksGallery scroll={scrollState}/>
+      <Awards/>
     </div>
   )
 }

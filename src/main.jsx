@@ -62,6 +62,7 @@ export function Intro(props){
                 <div className="title-cont">
                     <p><h1>BEN</h1>edicto R.</p>
                     <p><h1>CAB</h1>rera</p>
+                    <span></span>
                 </div>
                 <div className="description" >
                     <p style={{opacity:(scrollState<=500? 1:0)}}>BenCab is a Filipino painter and was awarded National Artist of the Philippines for Visual Arts (Painting) in 2006. He has been noted as arguably the best-selling painter of his generation of Filipino artists.</p>
@@ -74,22 +75,23 @@ export function Intro(props){
     )
 }
 
-const TimelineItem=(props)=>{
-    return(
-        <li>
-        <div className="timeline-item-cont">
-            <h1>{props.year}</h1>
-            <i><h3>{props.event}</h3></i>
-        </div>
-        </li>
-    )
-}
+
 
 export function Timeline(props){
     const scrollState = props.scroll
-
+    const TimelineItem=(props)=>{
+        return(
+            <li>
+            <div className="timeline-item-cont">
+                <h1>{props.year}</h1>
+                <i><h3>{props.event}</h3></i>
+            </div>
+            </li>
+        )
+    }
     return(
         <div id="timeline-tribute" className="timeline-cont" style={{opacity:( scrollState > 1316? (scrollState < 2635 ? "1": "0"): "0"), transition:"opacity .25s ease-in"}}>
+            <h1 className="heading">IMPORTANT MOMENT OF HIS LIFE</h1>
             <ul className="item-cont">
                 {
                     itemTime.map((value, index)=><TimelineItem key={index} year={value.year} event={value.event}/>)
@@ -117,11 +119,57 @@ export function NavSideBar(props){
                 </li>
 
                 {/* 2636 */}
-                <li><a style={{fontSize:(scrollState >= 2635? "3.5vw": "1.5vw")}} href="#works-tribute">WORKS</a></li>
+                <li><a style={{fontSize:(scrollState >= 2635? (scrollState < 3948 ? "3.5vw": "1.5vw"): "1.5vw")}} href="#works-tribute">WORKS</a></li>
+                
+                {/* 2636 */}
+                <li><a style={{fontSize:(scrollState >= 3948? "3.5vw": "1.5vw")}} href="#awards-tribute">AWARDS</a></li>
             </ul>
         </div>
     )
 }
+export function Awards(props){
+    const awards = awardItems
+    const AwardsCont=(props)=>{
+        const value = props.data
+        const names = value.name
+        var tmp = []
+        for (let i = 0; i < names.length; i++) {
+            const name = names[i];
+            const tmpt = <p key={i}><q>{name}</q></p>
+            tmp.push(tmpt)
+        }
+        return(
+            <div key={props.index} className="awards-item-container"  >
+            
+                <div className="caption-cont">
+                    <strong>{value.year}</strong>
+                    <div className="container-award">
+                    {
+                        tmp
+                    }
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        )
+    }
+    return(
+        <div id="awards-tribute" className="awards-cont">
+            <h1 className="heading">AWARDS & DISTINCTIONS</h1>
+            <div className="award-main-cont">
+            {
+                awards.map((value,index)=>{
+                    return(
+                        <AwardsCont  data={value} index={index}/>
+                    )
+                })
+            }
+            </div>
+        </div>
+    )
+}
+
 
 export function WorksGallery(props){
     const scrollState = props.scroll
@@ -145,7 +193,7 @@ export function WorksGallery(props){
     return(
         <div id="works-tribute" className="works-cont" style={{opacity:scrollState >= 2635? 1:0, backgroundImage: "url("+works[hoverSelected].image +")"}}>
             <div className="background-blur" style={{backdropFilter: "blur(15px)", position:"absolute", width:"100%", height:"100%", zIndex:1}}></div>
-            <h1>FAMOUS ARTWORK</h1>
+            <h1 className="heading" style={{color:"white"}}>FAMOUS ARTWORK</h1>
             <div className="work-main-cont">
             {
                 works.map((value,index)=>{
@@ -163,7 +211,67 @@ export function WorksGallery(props){
 
 
 
-
+const awardItems = [
+    {
+        name:["Holy Angel University Juan D. Nepomuceno Cultural Award for Outstanding Achievement in the Arts"],
+        year:2011
+    },
+    {
+        name:["Conferred the Order of National Artist for Visual Arts by President Gloria Macapagal-Arroyo in Malacanan Palace."],
+        year:2006
+    },
+    {
+        name:["Invited by the Singapore Tyler Print Institute to join their Visiting Artists Programme as artist-in residence for one month working on large-scale prints & paperpulp painting."],
+        year:2005
+    },
+    {
+        name:["ASEAN Achievement Award, for Visual & Performing Arts, 5th ASEAN Achievement Awards, ASEAN Business Forum, Jakarta",
+            "Outstanding Citizen of Baguio Award for Arts, given by the mayor of Baguio on the city’s 88th Foundation Day",],
+        year:1997
+    },
+    {
+        name:["Most Outstanding Kapampangan For Arts & Culture (Painting) Award, given by President Ramos on Pampanga Day"],
+        year:1994
+    },
+    {
+        name:["Chairman, 4th Baguio Arts Festival"],
+        year:1993
+    },
+    {
+        name:["Gawad CCP Para Sa Sining (CCP Awards For The Arts) for Visual Arts, Cultural Center of the Philippines"],
+        year:1992
+    },
+    {
+        name:["President, Baguio Arts Guild"],
+        year:1991
+    },
+    {
+        name:["Kalinangan (Cultural) Award For Painting, City of Manila"],
+        year:1988
+    },
+    {
+        name:["Thirteen Artists Award, Cultural Center of the Philippines"],
+        year:1970
+    },
+    {
+        name:["Philippine Representative, VI Paris Biennale"],
+        year:1969
+    },
+    {
+        name:["First Prize, Photography, 20th Art Association of the Philippines (AAP) Annual Exhibition & Competition",
+            "Second Prize, Photography, 20th AAP Annual Exhibition & Competition",
+            "Third Honorable Mention, Photography, 20th AAP Annual Exhibition & Competition",],
+        year:1967
+    },
+    {
+        name:["First Prize, Painting, University of the Philippines Student Council Art Competition"],
+        year:1963
+    },
+    {
+        name:["Second Prize, Painting, Shell National Student Art Competition"],
+        year:1962
+    },
+]
 
 
 
