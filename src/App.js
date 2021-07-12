@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import {useState, useEffect} from 'react'
 import './App.css';
+import {Intro, NavSideBar, Timeline, WorksGallery} from './main'
+// import {SwipeScroll} from './utility'
 
-function App() {
+
+
+
+
+
+
+function MainCompiler() {
+  const [scrollState, setScrollState] = useState(0);
+  const handleScroll = ()=>{
+    const position = window.pageXOffset;
+    setScrollState(position)
+    console.log(position)
+  }
+  useEffect(()=>{
+    window.addEventListener('scroll', handleScroll,{passive:true});
+    return()=>{
+      window.removeEventListener('scroll', handleScroll);
+    }
+  })
+  // const container = document.getElementById('main-container');
+  // new SwipeScroll(container);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main-container" className="main-container">
+      {/* The Commponent to be put */}
+      <NavSideBar scroll={scrollState}/>
+      <Intro scroll={scrollState}/>
+      <Timeline scroll={scrollState}/>
+      <WorksGallery scroll={scrollState}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default MainCompiler;
