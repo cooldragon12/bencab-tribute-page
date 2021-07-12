@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/bencab-tribute-page/static/css/main.bd75c0ae.chunk.css",
+    "main.js": "/bencab-tribute-page/static/js/main.80d1e1a0.chunk.js",
+    "main.js.map": "/bencab-tribute-page/static/js/main.80d1e1a0.chunk.js.map",
+    "runtime-main.js": "/bencab-tribute-page/static/js/runtime-main.2ab48700.js",
+    "runtime-main.js.map": "/bencab-tribute-page/static/js/runtime-main.2ab48700.js.map",
+    "static/js/2.722b8703.chunk.js": "/bencab-tribute-page/static/js/2.722b8703.chunk.js",
+    "static/js/2.722b8703.chunk.js.map": "/bencab-tribute-page/static/js/2.722b8703.chunk.js.map",
+    "index.html": "/bencab-tribute-page/index.html",
+    "static/css/main.bd75c0ae.chunk.css.map": "/bencab-tribute-page/static/css/main.bd75c0ae.chunk.css.map",
+    "static/js/2.722b8703.chunk.js.LICENSE.txt": "/bencab-tribute-page/static/js/2.722b8703.chunk.js.LICENSE.txt",
+    "static/media/bencab.cc774861.png": "/bencab-tribute-page/static/media/bencab.cc774861.png",
+    "static/media/benedicto-cabrera-anxiety.2f4d7ab1.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-anxiety.2f4d7ab1.jpg",
+    "static/media/benedicto-cabrera-edo-gesture.310a6271.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-edo-gesture.310a6271.jpg",
+    "static/media/benedicto-cabrera-mysterious-woman.5e204f75.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-mysterious-woman.5e204f75.jpg",
+    "static/media/benedicto-cabrera-portrait-of-caroline-(the-artists-wife).fc6c5317.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-portrait-of-caroline-(the-artists-wife).fc6c5317.jpg",
+    "static/media/benedicto-cabrera-sabel-in-blue.a931f973.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-sabel-in-blue.a931f973.jpg",
+    "static/media/benedicto-cabrera-the-oriental-fan-(from-larawan-series).98f971ce.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-the-oriental-fan-(from-larawan-series).98f971ce.jpg",
+    "static/media/benedicto-cabrera-yellow-confetti.545620bf.jpg": "/bencab-tribute-page/static/media/benedicto-cabrera-yellow-confetti.545620bf.jpg",
+    "static/media/f91e920d7f001698f455fd6dca051151--twins.af593b4a.jpg": "/bencab-tribute-page/static/media/f91e920d7f001698f455fd6dca051151--twins.af593b4a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ab48700.js",
+    "static/js/2.722b8703.chunk.js",
+    "static/css/main.bd75c0ae.chunk.css",
+    "static/js/main.80d1e1a0.chunk.js"
+  ]
+}
